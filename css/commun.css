@@ -3,52 +3,59 @@
 
 /*Nav Bar*/
 
-li,a,button{
+li,
+a,
+button {
 
     font-family: "Kode Mono", monospace;
     font-size: 30px;
     font-weight: 500;
-    font-style: normal; 
+    font-style: normal;
 }
 
 nav {
-   display: flex;
-   flex-direction: row;
-   width: 100%;
-   margin-left: 10vh;
-   height: auto;
-   align-items: center;
-   font-family: "Protest Revolution", sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10vh;
+    height: auto;
+    align-items: center;
+    font-family: "Protest Revolution", sans-serif;
 
 
-    
-    
-    
+
+
+
 }
 
 .nav_links {
     display: flex;
     align-items: center;
-    list-style: none; /* Remove default list styles */
+    list-style: none;
+    /* Remove default list styles */
     flex-direction: space-between;
     font-family: "Protest Revolution", sans-serif;
 
-   
-    
+
+
 }
 
 .nav_links li {
     display: flex;
     padding-right: 90px;
-        font-family: "Protest Revolution", sans-serif;
+    font-family: "Protest Revolution", sans-serif;
 
 
 }
+
 .nav-container {
     display: flex;
-    justify-content: space-between; /* This aligns nav links to the left and button to the right */
-    align-items: center; /* Keep items vertically aligned */
-    width: 100%; /* Ensure it spans the full width of its parent */
+    justify-content: space-between;
+    /* This aligns nav links to the left and button to the right */
+    align-items: center;
+    /* Keep items vertically aligned */
+    width: 100%;
+    /* Ensure it spans the full width of its parent */
     margin-right: 10vh;
 }
 
@@ -64,14 +71,15 @@ nav {
 }
 
 
-.logo-essential{
-color: #FFF8E1; /* Off-White or Cream */
+.logo-essential {
+    color: #FFF8E1;
+    /* Off-White or Cream */
 
 }
 
 
 
-*{
+* {
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
@@ -79,17 +87,19 @@ color: #FFF8E1; /* Off-White or Cream */
 
 
 header {
-    position: relative; /* Consider using 'relative' if you don't need the header to be 'absolute' */
+    position: abso;
+    /* Consider using 'relative' if you don't need the header to be 'absolute' */
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 10vh; /* Flexible minimum height */
+    min-height: 10vh;
+    /* Flexible minimum height */
     background-color: #222322;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    z-index: 0;
-     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 
-    
+
+
 }
 
 
@@ -106,7 +116,6 @@ header h4 {
 .intro {
     position: fixed;
     z-index: 1;
-    /* z index = infront/!infront*/
     left: 0;
     top: 0;
     width: 100%;
@@ -132,19 +141,21 @@ header h4 {
 .logo {
 
     position: relative;
-    display: inline-block;  /*so we can separe the 2 elements */
+    display: inline-block;
+    /*so we can separe the 2 elements */
     bottom: -20px;
     opacity: 0;
+
 }
 
-.logo.active{
+.logo.active {
 
     bottom: 0;
     opacity: 1;
     transition: ease-in-out 0.5s;
 }
 
-.logo.fade{
+.logo.fade {
 
     bottom: 150px;
     opacity: 0;
@@ -154,24 +165,28 @@ header h4 {
 
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
+
 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
-    color: #FFF8E1; /* Change #000 to whatever color you prefer */
-    text-decoration: none; /* Optional: removes the underline from links */
+    color: #FFF8E1;
+    /* Change #000 to whatever color you prefer */
+    text-decoration: none;
+    /* Optional: removes the underline from links */
 }
 
-body{
+body {
 
-    background-color: #FFF8E1; /* Off-White or Cream */
+    background-color: #FFF8E1;
+    /* Off-White or Cream */
     color: #222322;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -181,47 +196,93 @@ body{
 
 
 
-.ad-container{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #615e4c;
-color: #FFF8E1; /* Crème pour le texte */
-margin: 10vh,10vh,10vh;
-height: 50vh;
+.ad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #615e4c;
+    color: #FFF8E1;
+    /* Crème pour le texte */
+    margin: 10vh, 10vh, 10vh;
+    height: 50vh;
 
 }
 
-content h4{
+content h4 {
 
-font-size: 10vh;
-font-family: bold;
-
-}
-content p{
-
-font-size:2vh ;
+    font-size: 10vh;
+    font-family: bold;
 
 }
 
+content p {
+
+    font-size: 2vh;
+
+}
+
+.nav_links a:hover {
+    color: #D4AF37;
+    /* Change la couleur au survol */
+    text-decoration: underline;
+    /* Ajoute un soulignement pour mettre en évidence */
+    transition: color 0.3s ease-in-out;
+    /* Transition douce pour le changement de couleur */
+}
+
+/* Si vous souhaitez également un effet sur les boutons */
+.cta button:hover {
+    background-color: #222322;
+    /* Change la couleur de fond au survol */
+    color: #FFF8E1;
+    /* Change la couleur du texte au survol */
+    border-color: #D4AF37;
+    /* Change la couleur de la bordure au survol */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Transition douce pour les changements */
+}
+
+.logo-essential a:hover {
+    color: #D4AF37;
+    /* Change la couleur du texte au survol */
+    text-decoration: underline;
+    /* Ajoute un soulignement */
+    transition: color 0.3s ease-in-out;
+    /* Assure une transition douce */
+}
+
+.nav_links li {
+    padding: 10px 20px;
+    /* Ajoute un peu d'espacement autour des liens */
+    margin: 0 2vh;
+    /* Espacement entre chaque élément li */
+}
+
+.nav_links li:not(:last-child) {
+    border-right: 1px solid #FFF8E1;
+    /* Ajoute une séparation entre les éléments, sauf pour le dernier */
+    padding-right: 4vh;
+}
 
 
 /*test*/
-.slider{
+.slider {
     position: relative;
     width: 100%;
 }
-.myslider{
-display: none;
-height: 665px;
-overflow: hidden;
+
+.myslider {
+    display: none;
+    height: 665px;
+    overflow: hidden;
 }
 
-.prev, .next{
+.prev,
+.next {
 
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     font-size: 50px;
     padding: 15px;
     cursor: pointer;
@@ -231,56 +292,324 @@ overflow: hidden;
 
 }
 
-.prev:hover, .next:hover{
+.prev:hover,
+.next:hover {
 
-    color:#615e4c
+    color: #615e4c
 }
-.next{
+
+.next {
     right: 0;
 }
 
-.dotsbox{
 
-    postition: absolute;
+
+#logo {
+
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF8E1;
+    /* Off-White or Cream */
+}
+
+#logo:hover {
+
+    color: #D4AF37;
+    /* Change la couleur du texte au survol */
+    transition: color 0.3s ease-in-out;
+    /* Assure une transition douce */
+}
+
+#logo-s {
+    color: #D4AF37;
+
+
+}
+
+#logo:hover #logo-s {
+    color: #FFF8E1;
+    /* Off-White or Cream */
+}
+
+.sign {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+
+}
+
+.sign a {
+
+    color: #FFF;
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.act {
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    padding: 6px 15px;
+
+}
+
+.sign a:hover {
+
+    color: #D4AF37;
+    border-color: #161616
+}
+
+.slider {
+
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+
+}
+
+.myslider {
+    display: none;
+    height: 655px;
+    overflow: hidden;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: #FFF;
+    transition: 0.1s;
+    user-select: none;
+
+}
+
+.prev:hover,
+.next:hover {
+
+    color: #D4AF37;
+
+}
+
+.next {
+    right: 0;
+}
+
+.dotsbox {
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 26px;
+    bottom: 10vh;
     cursor: pointer;
 }
 
-.dot{
+.dots {
+
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 3pc solid #fff;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FFF;
+    border-radius: 60%;
     margin: 0 10px;
+    cursor: pointer;
 }
 
-.nav_links a:hover {
-    color: #D4AF37; /* Change la couleur au survol */
-    text-decoration: underline; /* Ajoute un soulignement pour mettre en évidence */
-    transition: color 0.3s ease-in-out; /* Transition douce pour le changement de couleur */
+.active,
+.dots:hover {
+    border-color: #D4AF37;
 }
 
-/* Si vous souhaitez également un effet sur les boutons */
-.cta button:hover {
-    background-color: #222322; /* Change la couleur de fond au survol */
-    color: #FFF8E1; /* Change la couleur du texte au survol */
-    border-color: #D4AF37; /* Change la couleur de la bordure au survol */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition douce pour les changements */
+.fade {
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5sec;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-.logo-essential a:hover {
-    color: #D4AF37; /* Change la couleur du texte au survol */
-    text-decoration: underline; /* Ajoute un soulignement */
-    transition: color 0.3s ease-in-out; /* Assure une transition douce */
+@-webkit-keyframes fade {
+
+    from {
+        opacity: 0.8
+    }
+
+    ;
+
+    to {
+        opacity: 1;
+    }
+
 }
-.nav_links li {
-    padding: 10px 20px; /* Ajoute un peu d'espacement autour des liens */
-    margin: 0 2vh; /* Espacement entre chaque élément li */
+
+@keyframes fade {
+    from {
+        opacity: 0.8
+    }
+
+
+
+    to {
+        opacity: 1;
+    }
+
+
 }
-.nav_links li:not(:last-child) {
-    border-right: 1px solid #FFF8E1; /* Ajoute une séparation entre les éléments, sauf pour le dernier */
-    padding-right: 4vh;
+
+.text {
+
+    position: absolute;
+    color: #FFF;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    z-index: 1;
+}
+
+@keyframes posi {
+
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 15%
+    }
+}
+
+@-webkit-keyframes posi {
+
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 15%
+    }
+}
+
+.text h1 {
+
+    color: #D4AF37;
+    font-weight: bold;
+    border: #161616;
+
+}
+
+.text p {
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #161616;
+}
+
+img {
+    transform: scale(1.2, 1.2);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40sec;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(1, 1)
+    }
+
+    to {
+        transform: scale(1.2, 1.2)
+    }
+}
+
+@-webkit-keyframes zoomin {
+    from {
+        transform: scale(1, 1)
+    }
+
+    to {
+        transform: scale(1.2, 1.2)
+    }
+}
+
+@media screen and (max-width:800px) {
+    .myslider {
+        height: 600px;
+    }
+
+    .text {
+
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+
+
+    @keyframes posi2 {
+
+        from {
+            top: 35%;
+        }
+
+        to {
+            top: 50%;
+        }
+    }
+
+    @-webkit-keyframes posi2 {
+
+        from {
+            top: 35%;
+        }
+
+        to {
+            top: 50%;
+        }
+    }
+
+    .text h1 {
+        font-size: 40px;
+
+    }
+
+    .text p {
+
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+
+    .text h1 {
+
+        font-size: 30px;
+    }
+
+    .sign {
+        margin-right: 20px;
+
+    }
+
+    .sign a {
+
+        font-size: 12px;
+    }
 }
