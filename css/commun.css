@@ -12,12 +12,15 @@ li,a,button{
 }
 
 nav {
-    display: flex;
-    position: fixed;
-    align-content: center;
-    margin: 0;
-    padding: 0;
-    top: 5%;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   margin-left: 10vh;
+   height: auto;
+   align-items: center;
+   font-family: "Protest Revolution", sans-serif;
+
+
     
     
     
@@ -25,31 +28,43 @@ nav {
 
 .nav_links {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     list-style: none; /* Remove default list styles */
-    margin-left: 65px;
-    
+    flex-direction: space-between;
+    font-family: "Protest Revolution", sans-serif;
+
    
     
 }
 
 .nav_links li {
     display: flex;
-
     padding-right: 90px;
+        font-family: "Protest Revolution", sans-serif;
 
+
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* This aligns nav links to the left and button to the right */
+    align-items: center; /* Keep items vertically aligned */
+    width: 100%; /* Ensure it spans the full width of its parent */
+    margin-right: 10vh;
 }
 
 .cta button {
-    padding: 10px 40px; /* Add padding to the contact button */
-    margin-left: 50vh;
-    position: relative;
+    right: 10vh;
+    display: flex;
+    background-color: #FFF8E1;
+    z-index: 1000;
+    align-self: flex-end;
+    padding: 10px;
+    border: 1px solid ##FFD700;
+
 }
 
 
 .logo-essential{
-
-margin-left: 10px;
 color: #FFF8E1; /* Off-White or Cream */
 
 }
@@ -64,34 +79,25 @@ color: #FFF8E1; /* Off-White or Cream */
 
 
 header {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: relative; /* Consider using 'relative' if you don't need the header to be 'absolute' */
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100px;
-    padding-left: 5%;
-    padding-top: 5%;
+    min-height: 10vh; /* Flexible minimum height */
     background-color: #222322;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    z-index: 0;
+     
 
     
 }
-button{
-    padding: 0;
-    margin: 0;
-    background-color: #FFF8E1;
-}
+
 
 header h4 {
-
-   
     padding-right: 0vh;
     bottom: 1rem;
     font-size: 2rem;
     font-family: "Protest Revolution", sans-serif;
-    
-
-
 }
 
 /*Splash screen*/
@@ -172,3 +178,101 @@ body{
     padding: 0;
 }
 
+
+
+
+.ad-container{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #615e4c;
+color: #FFF8E1; /* Crème pour le texte */
+margin: 10vh,10vh,10vh;
+height: 50vh;
+
+}
+
+content h4{
+
+font-size: 10vh;
+font-family: bold;
+
+}
+content p{
+
+font-size:2vh ;
+
+}
+
+
+
+/*test*/
+.slider{
+    position: relative;
+    width: 100%;
+}
+.myslider{
+display: none;
+height: 665px;
+overflow: hidden;
+}
+
+.prev, .next{
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: #FFF;
+    transition: 0.1s;
+    user-select: none;
+
+}
+
+.prev:hover, .next:hover{
+
+    color:#615e4c
+}
+.next{
+    right: 0;
+}
+
+.dotsbox{
+
+    postition: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 26px;
+    cursor: pointer;
+}
+
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3pc solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.nav_links a:hover {
+    color: #D4AF37; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement pour mettre en évidence */
+    transition: color 0.3s ease-in-out; /* Transition douce pour le changement de couleur */
+}
+
+/* Si vous souhaitez également un effet sur les boutons */
+.cta button:hover {
+    background-color: #222322; /* Change la couleur de fond au survol */
+    color: #FFF8E1; /* Change la couleur du texte au survol */
+    border-color: #D4AF37; /* Change la couleur de la bordure au survol */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition douce pour les changements */
+}
+
+.logo-essential a:hover {
+    color: #D4AF37; /* Change la couleur du texte au survol */
+    text-decoration: underline; /* Ajoute un soulignement */
+    transition: color 0.3s ease-in-out; /* Assure une transition douce */
+}
