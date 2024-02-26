@@ -59,7 +59,7 @@ nav {
     z-index: 1000;
     align-self: flex-end;
     padding: 10px;
-    border: 1px solid ##FFD700;
+    border: 1px solid #FFD700;
 
 }
 
@@ -275,4 +275,12 @@ overflow: hidden;
     color: #D4AF37; /* Change la couleur du texte au survol */
     text-decoration: underline; /* Ajoute un soulignement */
     transition: color 0.3s ease-in-out; /* Assure une transition douce */
+}
+.nav_links li {
+    padding: 10px 20px; /* Ajoute un peu d'espacement autour des liens */
+    margin: 0 2vh; /* Espacement entre chaque élément li */
+}
+.nav_links li:not(:last-child) {
+    border-right: 1px solid #FFF8E1; /* Ajoute une séparation entre les éléments, sauf pour le dernier */
+    padding-right: 4vh;
 }
