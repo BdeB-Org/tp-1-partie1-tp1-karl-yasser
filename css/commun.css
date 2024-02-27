@@ -21,6 +21,7 @@ nav {
     height: auto;
     align-items: center;
     font-family: "Protest Revolution", sans-serif;
+    line-height: 10vh;
 
 
 
@@ -115,7 +116,7 @@ header h4 {
 
 .intro {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -337,7 +338,7 @@ content p {
 .sign {
     float: right;
     line-height: 60px;
-    margin-right: 40px;
+   
 
 }
 
@@ -404,9 +405,11 @@ content p {
 
 .dotsbox {
     position: absolute;
+    display: flexbox;
     left: 50%;
+    top: 50%;
     transform: translate(-50%);
-    bottom: 10vh;
+    
     cursor: pointer;
 }
 
@@ -415,7 +418,7 @@ content p {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 3px solid #FFF;
+    border: 1vh solid #FFF;
     border-radius: 60%;
     margin: 0 10px;
     cursor: pointer;
@@ -613,3 +616,21 @@ img {
         font-size: 12px;
     }
 }
+
+
+.divider {
+    position: relative; 
+    background: transparent; 
+  }
+  
+  .divider::before {
+    content: ""; /* Nécessaire pour afficher le pseudo-élément */
+    position: absolute; /* Positionne le pseudo-élément par rapport à son parent */
+    top: 0; /* Aligné en haut */
+    left: 0; /* Aligné à gauche */
+    width: 100%; /* Assure que le pseudo-élément s'étend sur toute la largeur */
+    height: 100px; /* Hauteur du dégradé, simulant la "bordure" */
+    background: linear-gradient(to bottom, #615e4c, transparent); /* Dégradé de la couleur au transparent */
+  }
+  
+  

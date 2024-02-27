@@ -1,12 +1,11 @@
+
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 
 window.addEventListener('DOMContentLoaded', ()=>{
 
-
     setTimeout(() => {
-
 
         logoSpan.forEach((span, idx) => {
 
@@ -18,6 +17,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
         setTimeout(() => {
             logoSpan.forEach((span, idx) => {
+
                 setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
@@ -39,7 +39,6 @@ window.addEventListener('DOMContentLoaded', ()=>{
     })
 })
 
-/*hell*/ 
 
 const myslide = document.querySelectorAll('.myslider'),
 dots = document.querySelectorAll('.dots');
@@ -90,5 +89,3 @@ function slidefun(n) {
 
 document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
 document.querySelector('.next').addEventListener('click', () => plusSlides(1));
-
-
