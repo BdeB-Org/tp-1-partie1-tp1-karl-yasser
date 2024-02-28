@@ -535,53 +535,40 @@ a {
 
 
 .ad-content {
-    margin-left: 10vh;
-    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .ad-content h4 {
     color: #FFF;
     font-size: 5vh;
     font-family: bold;
-    padding: 0;
-    margin-top: 90px;
-    margin-bottom: 10px;
-}
-.ad-content h2{
-    padding-left: 100px;
-    color: #FFF;
-    font-size: 4vh;
-    
-
+   
 }
 
-.images-tendance{
-    display: flex;
-    margin-top: 100px;
-    justify-content: center;
-    justify-content: space-around;
-    position: relative;
+.container-product{
+   
+    background-color: aquamarine;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+    border-radius: 30px;
+}
+.container-product h2{
+    color: #FFF8E1;
+    font-size: 55px;
+    padding-top: 5vh;
+    padding-left: 10vh;
+    text-decoration: underline;
+}
+
+.product img{
+border-radius: 40px;
+
+}
+.product{
     text-align: center;
-}
-.images-tendance img{
-
-    border-radius: 40px;
-    
-}
-
-
-
-.product-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    text-align: center;
-    margin-top: 50px;
 
 }
-
 .product h1{
 font-weight: bold;
 color:#222322;
@@ -589,21 +576,22 @@ font-size: 3vh;
 
 }
 
+.content-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10vh;
+}
+
 .product h2{
-
-
+color: #FFF8E1;
+font-size: 30px;
 }
 
 .product p{
 font-size: 30px;
 }
 
-.product-background{
-    display: block;
-    padding-top: 50px;
-    background-color: aquamarine;
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
-}
 
 
 
@@ -664,3 +652,4 @@ form button{
     font-size: 15px;
     cursor: pointer;
 }
+
