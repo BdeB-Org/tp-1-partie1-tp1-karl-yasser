@@ -24,18 +24,63 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 10vh;
     width: 100%;
-    margin-left: 10vh;
+    background-color: #353329;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
 }
 
 .nav_links {
     display: flex;
     justify-content: center;
-    padding: 0 20px;
+    font-size: 22px;
+    padding: 15px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     list-style: none;
     /* Removes bullet points from the list */
 }
+
+/* Animation of ze year */
+/* Source : Hover.css */
+.nav_links {
+    display: inline-block;
+    vertical-align: middle;
+    --webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.nav_links:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #FFFFFF;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.nav_links:hover:before, .nav_links:focus:before, .nav_links:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+
 
 
 .nav_links li {
@@ -284,7 +329,7 @@ a {
 .fade {
 
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5sec;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -313,12 +358,9 @@ a {
         opacity: 0.8
     }
 
-    ;
-
     to {
         opacity: 1;
     }
-
 }
 
 @keyframes fade {
@@ -395,7 +437,7 @@ a {
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
-    animation-duration: 30sec;
+    animation-duration: 30s;
     flex-wrap: wrap;
     width: 100%;
     object-fit: cover;
@@ -517,7 +559,7 @@ a {
     display: flex;
     margin-top: 100px;
     justify-content: center;
-    justify-content:space-around;
+    justify-content: space-around;
     position: relative;
     text-align: center;
 }
@@ -560,7 +602,7 @@ font-size: 30px;
     display: block;
     padding-top: 50px;
     background-color: aquamarine;
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('background.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
 }
 
 
