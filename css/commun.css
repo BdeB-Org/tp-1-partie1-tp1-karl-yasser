@@ -141,7 +141,7 @@ nav {
 
 
 header h4 {
-    padding-right: 0vh;
+    padding-right: 0;
     bottom: 1rem;
     font-size: 2rem;
     font-family: "Protest Revolution", sans-serif;
@@ -404,7 +404,7 @@ a {
     
     font-size: 40px;
     color: #615e4c;
-    text-shadow: 1px 2px 0px #b4b2b2;
+    text-shadow: 1px 2px 0 #b4b2b2;
     /* Lighter shadow for dark text */
 }
 
@@ -663,4 +663,67 @@ form button{
     padding: 10px 30px;
     font-size: 15px;
     cursor: pointer;
+}
+
+/* Produits */
+
+.prod_image {
+    width: 500px;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    margin: 35px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#text {
+    margin: 25px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 35px;
+}
+
+.desc {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+}
+
+#line {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+}
+
+.prod_cta {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.prod_cta:hover {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
 }
