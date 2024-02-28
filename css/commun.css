@@ -359,7 +359,7 @@ a {
 
 .text p {
     padding-top: 40px;
-    
+
     font-size: 40px;
     color: #615e4c;
     text-shadow: 1px 2px 0px #b4b2b2;
@@ -492,9 +492,13 @@ a {
 }
 
 
+
 .ad-content {
-    margin-left: 10vh;
-    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+
+
 }
 
 .ad-content h4 {
@@ -502,95 +506,97 @@ a {
     font-size: 5vh;
     font-family: bold;
     padding: 0;
-    margin-top: 90px;
-    margin-bottom: 10px;
 }
-.ad-content h2{
-    padding-left: 100px;
-    color: #FFF;
-    font-size: 4vh;
-    
-
-}
-
-.images-tendance{
-    display: flex;
-    margin-top: 100px;
-    justify-content: center;
-    justify-content:space-around;
-    position: relative;
-    text-align: center;
-}
-.images-tendance img{
-
-    border-radius: 40px;
-    
-}
-
-
-
-.product-content{
+.container-product {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    text-align: center;
-    margin-top: 50px;
-
-}
-
-.product h1{
-font-weight: bold;
-color:#222322;
-font-size: 3vh;
-
-}
-
-.product h2{
-
-
-}
-
-.product p{
-font-size: 30px;
-}
-
-.product-background{
-    display: block;
-    padding-top: 50px;
+    width: 100%;
     background-color: aquamarine;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('background.jpg');
+    justify-content: space-between;
+}
+
+.container-product h2 {
+    position: relative;
+    color: #FFF8E1;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    font-size: 30px;
+}
+
+
+
+.product{
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+}
+.product img{
+
+    border-radius: 40px;
+}
+
+.product h1 {
+    font-weight: bold;
+    color: #222322;
+    font-size: 3vh;
+
+}
+
+.product p {
+    font-size: 30px;
 }
 
 
 
 
-.footer{
-width: 100%;
-margin-top: 150px;
-background-color: #222322;
-color: #FFF8E1;
-display: flex;
-padding-top: 10vh;
-padding-bottom: 10vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    margin-top: 150px;
+    background-color: #222322;
+    color: #FFF8E1;
+    display: flex;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
-.footer div{
+.footer div {
 
     text-align: center;
 }
-.column-2{
+
+.column-2 {
 
     flex-grow: 2;
 }
 
-.footer div h3{
+.footer div h3 {
 
     font-weight: 300;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
+
 .column-1 a {
 
     display: block;
@@ -599,12 +605,12 @@ padding-bottom: 10vh;
     margin-bottom: 10px;
 }
 
-form input{
+form input {
 
 
     width: 400px;
-    height:45px;
-    border-radius: 4px;   
+    height: 45px;
+    border-radius: 4px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -612,7 +618,7 @@ form input{
     border: none;
 }
 
-form button{
+form button {
     background: transparent;
     border: 2px solid #ffffff;
     color: #FFF;
