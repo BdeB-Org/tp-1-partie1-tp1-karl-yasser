@@ -1,107 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@500&display=swap');
 
 
-/*Nav Bar*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #615e4c;
+}
 
-li,
-a,
-button {
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #222322;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10vh;
+    width: 100%;
+    margin-left: 10vh;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    list-style: none;
+    /* Removes bullet points from the list */
+}
+
+
+.nav_links li {
+    margin-left: 3vh;
+    margin-right: 3vh;
+
+}
+
+.nav_links a:hover {
+    color: #D4AF37;
+    /* Change la couleur au survol */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Si vous souhaitez également un effet sur les boutons */
+.cta button:hover {
+    background-color: #222322;
+    /* Change la couleur de fond au survol */
+    color: #FFF8E1;
+    /* Change la couleur du texte au survol */
+    border-color: #D4AF37;
+    /* Change la couleur de la bordure au survol */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Transition douce pour les changements */
+}
+
+.logo-essential a:hover {
+    color: #D4AF37;
+    /* Change la couleur du texte au survol */
+    text-decoration: underline;
+    /* Ajoute un soulignement */
+    transition: color 0.3s ease-in-out;
+    /* Assure une transition douce */
+}
+
+
+.cta button {
+    right: 10vh;
+    display: flex;
+    background-color: #FFF8E1;
+    z-index: 3;
+    align-self: flex-end;
+    padding: 10px;
+    border: 1px solid #FFD700;
     font-family: "Kode Mono", monospace;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: 10vh;
-    height: auto;
-    align-items: center;
-    font-family: "Protest Revolution", sans-serif;
-    line-height: 10vh;
 
 
 
 
 
-}
-
-.nav_links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    /* Remove default list styles */
-    flex-direction: space-between;
-    font-family: "Protest Revolution", sans-serif;
 
 
-
-}
-
-.nav_links li {
-    display: flex;
-    padding-right: 90px;
-    font-family: "Protest Revolution", sans-serif;
-
-
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    /* This aligns nav links to the left and button to the right */
-    align-items: center;
-    /* Keep items vertically aligned */
-    width: 100%;
-    /* Ensure it spans the full width of its parent */
-    margin-right: 10vh;
-}
-
-.cta button {
-    right: 10vh;
-    display: flex;
-    background-color: #FFF8E1;
-    z-index: 1000;
-    align-self: flex-end;
-    padding: 10px;
-    border: 1px solid #FFD700;
-
-}
-
-
-.logo-essential {
-    color: #FFF8E1;
-    /* Off-White or Cream */
-
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-
-header {
-    position: abso;
-    /* Consider using 'relative' if you don't need the header to be 'absolute' */
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 10vh;
-    /* Flexible minimum height */
-    background-color: #222322;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-
-
-
-}
 
 
 header h4 {
@@ -184,105 +172,14 @@ a {
     /* Optional: removes the underline from links */
 }
 
-body {
-
-    background-color: #FFF8E1;
-    /* Off-White or Cream */
-    color: #222322;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 
 
-
-.ad-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #615e4c;
-    color: #FFF8E1;
-    /* Crème pour le texte */
-    margin: 10vh, 10vh, 10vh;
-    height: 50vh;
-
-}
-
-content h4 {
-
-    font-size: 10vh;
-    font-family: bold;
-
-}
-
-content p {
-
-    font-size: 2vh;
-
-}
-
-.nav_links a:hover {
-    color: #D4AF37;
-    /* Change la couleur au survol */
-    text-decoration: underline;
-    /* Ajoute un soulignement pour mettre en évidence */
-    transition: color 0.3s ease-in-out;
-    /* Transition douce pour le changement de couleur */
-}
-
-/* Si vous souhaitez également un effet sur les boutons */
-.cta button:hover {
-    background-color: #222322;
-    /* Change la couleur de fond au survol */
-    color: #FFF8E1;
-    /* Change la couleur du texte au survol */
-    border-color: #D4AF37;
-    /* Change la couleur de la bordure au survol */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    /* Transition douce pour les changements */
-}
-
-.logo-essential a:hover {
-    color: #D4AF37;
-    /* Change la couleur du texte au survol */
-    text-decoration: underline;
-    /* Ajoute un soulignement */
-    transition: color 0.3s ease-in-out;
-    /* Assure une transition douce */
-}
-
-.nav_links li {
-    padding: 10px 20px;
-    /* Ajoute un peu d'espacement autour des liens */
-    margin: 0 2vh;
-    /* Espacement entre chaque élément li */
-}
-
-.nav_links li:not(:last-child) {
-    border-right: 1px solid #FFF8E1;
-    /* Ajoute une séparation entre les éléments, sauf pour le dernier */
-    padding-right: 4vh;
-}
-
-
-/*test*/
-.slider {
-    position: relative;
-    width: 100%;
-}
-
-.myslider {
-    display: none;
-    height: 665px;
-    overflow: hidden;
-}
 
 .prev,
 .next {
-
     position: absolute;
-    top: 50%;
+    top: 44vh;
     transform: translate(0, -50%);
     font-size: 50px;
     padding: 15px;
@@ -290,13 +187,16 @@ content p {
     color: #FFF;
     transition: 0.1s;
     user-select: none;
-
 }
+
+
+
 
 .prev:hover,
 .next:hover {
 
-    color: #615e4c
+    color: #D4AF37;
+
 }
 
 .next {
@@ -335,20 +235,19 @@ content p {
     /* Off-White or Cream */
 }
 
-.sign {
-    float: right;
-    line-height: 60px;
-   
 
-}
 
 .sign a {
 
     color: #FFF;
     font-weight: bold;
-
     text-decoration: none;
 
+    .sign a:hover {
+
+        color: #D4AF37;
+        border-color: #161616
+    }
 }
 
 .act {
@@ -358,67 +257,41 @@ content p {
 
 }
 
-.sign a:hover {
-
-    color: #D4AF37;
-    border-color: #161616
-}
-
 .slider {
 
     position: relative;
     width: 100%;
     background-color: #FFF;
-
 }
 
 .myslider {
     display: none;
-    height: 655px;
     overflow: hidden;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-size: 50px;
-    padding: 15px;
-    cursor: pointer;
-    color: #FFF;
-    transition: 0.1s;
-    user-select: none;
-
-}
-
-.prev:hover,
-.next:hover {
-
-    color: #D4AF37;
-
-}
-
-.next {
-    right: 0;
+    height: 70vh;
 }
 
 .dotsbox {
     position: absolute;
-    display: flexbox;
     left: 50%;
-    top: 50%;
+    top: 72vh;
     transform: translate(-50%);
-    
     cursor: pointer;
+}
+
+.fade {
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5sec;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .dots {
 
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1vh solid #FFF;
+    width: 10px;
+    height: 10px;
+    background-color: #FFF8E1;
     border-radius: 60%;
     margin: 0 10px;
     cursor: pointer;
@@ -429,13 +302,7 @@ content p {
     border-color: #D4AF37;
 }
 
-.fade {
 
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5sec;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
 @-webkit-keyframes fade {
 
@@ -478,6 +345,24 @@ content p {
     z-index: 1;
 }
 
+.text h1 {
+
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.text p {
+    padding-top: 40px;
+    
+    font-size: 40px;
+    color: #615e4c;
+    text-shadow: 1px 2px 0px #b4b2b2;
+    /* Lighter shadow for dark text */
+}
+
 @keyframes posi {
 
     from {
@@ -500,30 +385,16 @@ content p {
     }
 }
 
-.text h1 {
 
-    color: #D4AF37;
-    font-weight: bold;
-    border: #161616;
 
-}
-
-.text p {
-
-    font-weight: bold;
-    font-size: 20px;
-    color: #161616;
-}
-
-img {
+.slider img {
     transform: scale(1.2, 1.2);
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
-    animation-duration: 40sec;
+    animation-duration: 30sec;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -618,19 +489,64 @@ img {
 }
 
 
-.divider {
-    position: relative; 
-    background: transparent; 
-  }
-  
-  .divider::before {
-    content: ""; /* Nécessaire pour afficher le pseudo-élément */
-    position: absolute; /* Positionne le pseudo-élément par rapport à son parent */
-    top: 0; /* Aligné en haut */
-    left: 0; /* Aligné à gauche */
-    width: 100%; /* Assure que le pseudo-élément s'étend sur toute la largeur */
-    height: 100px; /* Hauteur du dégradé, simulant la "bordure" */
-    background: linear-gradient(to bottom, #615e4c, transparent); /* Dégradé de la couleur au transparent */
-  }
-  
-  
+.ad-content {
+    margin-left: 10vh;
+}
+
+.ad-content h4 {
+    color: #FFF;
+    font-size: 5vh;
+    font-family: bold;
+    padding: 0;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+.ad-content h2{
+    padding-left: 100px;
+    color: #FFF;
+    font-size: 3vh;
+
+}
+
+.images-tendance{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    justify-content:space-around;
+    position: relative;
+    text-align: center;
+}
+.images-tendance img{
+
+    border-radius: 40px;
+    
+}
+
+
+
+.product-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 18vh;
+    margin-right: 18vh;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.product h1{
+font-weight: bold;
+color:#222322;
+font-size: 3vh;
+
+}
+
+.product h2{
+
+
+}
+
+.product p{
+font-size: 30px;
+}
