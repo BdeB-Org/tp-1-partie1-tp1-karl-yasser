@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@500&display=swap');
 
-
+/*<div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">
+                Essential
+            </span>
+            <span class="logo">
+                Wear.
+            </span>
+        </h1>
+    </div>*/
 body {
     margin: 0;
     padding: 0;
@@ -561,23 +570,28 @@ a {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
     border-radius: 30px;
     margin-bottom: 500px;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
+    border: 2px solid #353329;
+
 }
 
 .container-product a {
-    outline: 4px groove #ffffff;
-    outline-offset: 13px;
-    border-radius: 10px;
-    font-size: 2vh;
+   
+    height: 30px;
+    width: 50px;
+    background: transparent;
+    border: 2px solid #FFF8E1;
+    outline: none;
+    border-radius:6px;
+    padding: 2px;
+
 }
 
 .container-product a:hover {
 
-    outline-offset: 13px;
-    color: #D4AF37;
+    
     padding: 5px;
-    transition: color 0.3s ease-in-out, color 0.3s ease-in-out;
     transition: padding 0.2s ease-in-out, padding 0.2s ease-in-out;
 
 }
@@ -603,7 +617,7 @@ a {
 .product h1 {
     font-weight: bold;
     color: #222322;
-    font-size: 2vh;
+    font-size: 3vh;
 
 }
 
@@ -611,8 +625,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 40vh;
-    padding-bottom: 10vh;
+    height: auto;
+    padding-bottom: 10px;
 }
 
 .product h2 {
@@ -764,4 +778,28 @@ h1 {
     margin: 10px;
     cursor: pointer;
 
+}
+
+
+.univers-container{
+  
+    background-color:transparent;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
+    border-radius: 30px;
+    border: 2px solid #353329;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.univers{
+   
+    background-color: #b4b2b2;
+    width: 50vh;
+    height:300px ;
+    border-radius: 6px;
 }
