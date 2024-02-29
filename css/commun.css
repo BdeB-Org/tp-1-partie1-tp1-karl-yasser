@@ -566,13 +566,11 @@ a {
 
 .container-product {
 
-    background-color: aquamarine;
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+    background-color: #FFF;
     border-radius: 30px;
-    margin-bottom: 500px;
+    margin-bottom: 100px;
     width: 90%;
     margin-left: 5%;
-    border: 2px solid #353329;
 
 }
 
@@ -581,10 +579,12 @@ a {
     height: 30px;
     width: 50px;
     background: transparent;
-    border: 2px solid #FFF8E1;
+    border: 2px solid #222322;
     outline: none;
     border-radius:6px;
     padding: 2px;
+    color: #222322;
+    
 
 }
 
@@ -597,7 +597,7 @@ a {
 }
 
 .container-product h2 {
-    color: #FFF8E1;
+    color: #222322;
     font-size: 5vh;
     padding-top: 5vh;
     padding-left: 10vh;
@@ -606,6 +606,8 @@ a {
 
 .product img {
     border-radius: 40px;
+    border: 2px solid #353329;
+
 
 }
 
