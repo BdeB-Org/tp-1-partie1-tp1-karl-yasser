@@ -644,6 +644,8 @@ a {
     padding-bottom: 10vh;
     display: flex;
     align-items: center;
+    position: absolute;
+
 }
 
 .footer div {
@@ -728,6 +730,14 @@ h1 {
 .desc {
     font-family: "Avenir Next", sans-serif;
     font-size: 20px;
+    color: #222322;
+}
+
+.desc a{
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+    color: #222322;
+
 }
 
 #line {
