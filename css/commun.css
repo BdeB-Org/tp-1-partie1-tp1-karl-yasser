@@ -171,6 +171,30 @@ h1 {
     margin-bottom: 25px;
 }
 
+.prod_name {
+    color: black;
+}
+
+.cat_cta {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.cat_cta:hover {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+}
+
+
 h2 {
     font-family: "Avenir Next", sans-serif;
 }
