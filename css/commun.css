@@ -132,13 +132,48 @@ nav {
     font-style: normal;
 }
 
+.cat_section {
+    margin: 25px;
+}
 
+#wear_grid {
+    display: flex;
+    flex-wrap: wrap;
 
+    gap: 20px;
+}
 
+.cat_item {
+    display: flex;
+    flex-direction: column;
 
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+.cat_image {
+    width: 350px;
+}
 
+.cat_text {
+    margin: 25px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Avenir Next", sans-serif;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-family: "Avenir Next", sans-serif;
+}
 
 
 header h4 {
@@ -699,7 +734,7 @@ h1 {
     font-size: 20px;
 }
 
-#line {
+.line {
     height: 1px;
     width: 100%;
     background-color: gray;
